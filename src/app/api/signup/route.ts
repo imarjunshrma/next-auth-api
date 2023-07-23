@@ -1,3 +1,14 @@
+/**
+ * This TypeScript function handles the POST request for user registration, including validation,
+ * hashing the password, saving the user to the database, generating a JWT token, and setting it as a
+ * cookie in the response.
+ * @param {Request} req - The `req` parameter is the request object that contains information about the
+ * incoming HTTP request. It is used to extract the request body and other details.
+ * @returns The code is returning a NextResponse object. If the fields in the request body are invalid,
+ * it returns a JSON response with a "msg" property set to "invalid fields" and a status code of 400.
+ * If the user is already present, it returns a JSON response with a "msg" property set to "User is
+ * already present" and a status code of 409. If the
+ */
 import User from "@/Models/userModels";
 import connection from "@/db/config";
 import { NextResponse } from "next/server";

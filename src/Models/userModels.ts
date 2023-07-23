@@ -1,3 +1,4 @@
+/* This code is defining a Mongoose schema and model for a user in a TypeScript file. */
 import mongoose from "mongoose";
 
 interface UserInter {

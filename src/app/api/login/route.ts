@@ -1,3 +1,14 @@
+/**
+ * This TypeScript function handles user login by checking the email and password, verifying them, and
+ * generating a JWT token for authentication.
+ * @param {Request} req - The `req` parameter is the request object that contains information about the
+ * incoming HTTP request, such as headers, body, and query parameters. It is used to extract the email
+ * and password from the request body.
+ * @returns The code is returning a NextResponse object. If the email or password is missing, it
+ * returns a JSON response with a "msg" property set to "invalid fields" and a status code of 400. If
+ * the user is not found, it returns a JSON response with a "msg" property set to "User is not
+ * available" and a status code of 409. If the password does
+ */
 import User from "@/Models/userModels";
 import connection from "@/db/config";
 import { NextResponse } from "next/server";
